@@ -17,7 +17,6 @@
             "name":"klavaro",
             "cleanup": [
                 "*.a",
-                "/lib/debug",
                 "/share/man"
             ],
             "sources":[
