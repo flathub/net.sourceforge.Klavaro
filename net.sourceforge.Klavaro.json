@@ -6,6 +6,7 @@
     "command": "klavaro",
     "finish-args":[
         "--socket=x11",
+        "--share=ipc",
         "--socket=wayland",
         "--socket=pulseaudio"
     ],
