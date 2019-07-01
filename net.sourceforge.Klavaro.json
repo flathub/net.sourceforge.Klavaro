@@ -1,7 +1,7 @@
 {
     "id": "net.sourceforge.Klavaro",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "1.6",
+    "runtime-version": "18.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "klavaro",
     "finish-args":[
@@ -10,7 +10,6 @@
         "--socket=wayland",
         "--socket=pulseaudio"
     ],
-    "rename-appdata-file": "klavaro.appdata.xml",
     "rename-icon": "klavaro",
     "rename-desktop-file": "klavaro.desktop",
     "modules":[
@@ -19,8 +18,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://ftp.gnome.org/pub/GNOME/sources/adwaita-icon-theme/3.26/adwaita-icon-theme-3.26.0.tar.xz",
-                    "sha256": "9cad85de19313f5885497aceab0acbb3f08c60fcd5fa5610aeafff37a1d12212"
+                    "url": "http://ftp.gnome.org/pub/GNOME/sources/adwaita-icon-theme/3.32/adwaita-icon-theme-3.32.0.tar.xz",
+                    "sha256": "698db6e407bb987baec736c6a30216dfc0317e3ca2403c7adf3a5aa46c193286"
                 }
             ]
         },
@@ -30,11 +29,19 @@
                 "*.a",
                 "/share/man"
             ],
+            "post-install": [
+                "rm -f /app/share/appdata/klavaro.appdata.xml",
+                "install -Dm644 net.sourceforge.Klavaro.appdata.xml /app/share/appdata/net.sourceforge.Klavaro.appdata.xml"
+            ],
             "sources":[
                 {
                     "type": "archive",
-                    "url": "https://svwh.dl.sourceforge.net/project/klavaro/klavaro-3.03.tar.bz2",
-                    "sha256": "e0959f21e54e7f4700042a3a14987a7f8fc898701eab4f721ebcf4559a2c87b5"
+                    "url": "https://downloads.sourceforge.net/klavaro/klavaro-3.08.tar.bz2",
+                    "sha256": "2c6b0c2d0a7a6cb4c568d0c3a97267bf7fbac98b8b97b93bb81c6a8e9ac9bb62"
+                },
+                {
+                    "type": "file",
+                    "path": "net.sourceforge.Klavaro.appdata.xml"
                 }
             ]
         }
