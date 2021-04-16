@@ -17,6 +17,11 @@
             "name": "adwaita-icon-theme",
             "sources": [
                 {
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "adwaita-icon-theme",
+                        "stable-only": true
+                    },
                     "type": "archive",
                     "url": "http://ftp.gnome.org/pub/GNOME/sources/adwaita-icon-theme/3.32/adwaita-icon-theme-3.32.0.tar.xz",
                     "sha256": "698db6e407bb987baec736c6a30216dfc0317e3ca2403c7adf3a5aa46c193286"
@@ -35,6 +40,12 @@
             ],
             "sources":[
                 {
+                    "x-checker-data": {
+                        "type": "html",
+                        "url": "https://sourceforge.net/projects/klavaro/rss",
+                        "pattern": "<link>(https://sourceforge.net/.+/klavaro-([\\d\\.]+\\d).tar.\\w+)/download</link>",
+                        "is-main-source": true
+                    },
                     "type": "archive",
                     "url": "https://downloads.sourceforge.net/klavaro/klavaro-3.08.tar.bz2",
                     "sha256": "2c6b0c2d0a7a6cb4c568d0c3a97267bf7fbac98b8b97b93bb81c6a8e9ac9bb62"
