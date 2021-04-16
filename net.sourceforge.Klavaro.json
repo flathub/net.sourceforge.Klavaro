@@ -44,7 +44,8 @@
             ],
             "post-install": [
                 "rm -f /app/share/appdata/klavaro.appdata.xml",
-                "install -Dm644 net.sourceforge.Klavaro.appdata.xml /app/share/appdata/net.sourceforge.Klavaro.appdata.xml"
+                "install -Dm644 net.sourceforge.Klavaro.appdata.xml /app/share/appdata/net.sourceforge.Klavaro.appdata.xml",
+                "install -Dm644 data/icons/hicolor/48x48.svg /app/share/icons/hicolor/scalable/apps/net.sourceforge.Klavaro.svg"
             ],
             "sources": [
                 {
