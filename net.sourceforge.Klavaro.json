@@ -15,6 +15,9 @@
     "modules": [
         {
             "name": "adwaita-icon-theme",
+            "cleanup": [
+                "/lib"
+            ],
             "sources": [
                 {
                     "x-checker-data": {
