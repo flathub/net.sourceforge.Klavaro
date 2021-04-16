@@ -4,7 +4,7 @@
     "runtime-version": "20.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "klavaro",
-    "finish-args":[
+    "finish-args": [
         "--socket=x11",
         "--share=ipc",
         "--socket=wayland",
@@ -12,7 +12,7 @@
     ],
     "rename-icon": "klavaro",
     "rename-desktop-file": "klavaro.desktop",
-    "modules":[
+    "modules": [
         {
             "name": "adwaita-icon-theme",
             "sources": [
@@ -38,7 +38,7 @@
                 "rm -f /app/share/appdata/klavaro.appdata.xml",
                 "install -Dm644 net.sourceforge.Klavaro.appdata.xml /app/share/appdata/net.sourceforge.Klavaro.appdata.xml"
             ],
-            "sources":[
+            "sources": [
                 {
                     "x-checker-data": {
                         "type": "html",
