@@ -56,8 +56,8 @@
                         "is-main-source": true
                     },
                     "type": "archive",
-                    "url": "https://sourceforge.net/projects/klavaro/files/klavaro-3.12.tar.bz2",
-                    "sha256": "c450e27f07d5e7d57818a5a8d428cacad7c17a28dcabe0c2e5694a4fe9abb97a"
+                    "url": "https://sourceforge.net/projects/klavaro/files/klavaro-3.13.tar.bz2",
+                    "sha256": "e8200b3e98c9a7d7acf1e846df294aeb488c081da9de38feaca0cc19311dcc7c"
                 },
                 {
                     "type": "file",
