@@ -1,11 +1,10 @@
 {
     "id": "net.sourceforge.Klavaro",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "21.08",
+    "runtime-version": "22.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "klavaro",
     "finish-args": [
-        "--socket=x11",
         "--socket=fallback-x11",
         "--share=ipc",
         "--socket=wayland",
@@ -29,7 +28,7 @@
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://sourceforge.net/projects/gtkdatabox3/rss",
-                        "pattern": "<link>(https://sourceforge.net/.+/gtkdatabox3-([\\d\\.]+\\d).tar.\\w+)/download</link>"
+                        "pattern": "<link>(https://sourceforge.net/.+/gtkdatabox-([\\d\\.]+\\d).tar.\\w+)/download</link>"
                     },
                     "type": "archive",
                     "url": "https://sourceforge.net/projects/gtkdatabox3/files/gtkdatabox-1.0.0.tar.gz",
@@ -57,8 +56,8 @@
                         "is-main-source": true
                     },
                     "type": "archive",
-                    "url": "https://sourceforge.net/projects/klavaro/files/klavaro-3.13.tar.bz2",
-                    "sha256": "e8200b3e98c9a7d7acf1e846df294aeb488c081da9de38feaca0cc19311dcc7c"
+                    "url": "https://sourceforge.net/projects/klavaro/files/klavaro-3.14.tar.bz2",
+                    "sha256": "87187e49d301c510e6964098cdb612126bf030d2a875fd799eadcad3eae56dab"
                 },
                 {
                     "type": "file",
