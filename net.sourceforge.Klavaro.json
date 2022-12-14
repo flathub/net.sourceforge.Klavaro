@@ -28,7 +28,7 @@
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://sourceforge.net/projects/gtkdatabox3/rss",
-                        "pattern": "<link>(https://sourceforge.net/.+/gtkdatabox3-([\\d\\.]+\\d).tar.\\w+)/download</link>"
+                        "pattern": "<link>(https://sourceforge.net/.+/gtkdatabox-([\\d\\.]+\\d).tar.\\w+)/download</link>"
                     },
                     "type": "archive",
                     "url": "https://sourceforge.net/projects/gtkdatabox3/files/gtkdatabox-1.0.0.tar.gz",
