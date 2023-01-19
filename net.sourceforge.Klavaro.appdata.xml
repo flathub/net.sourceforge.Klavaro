@@ -30,6 +30,7 @@
   <url type="translate">http://klavaro.sourceforge.net/en/translation.html</url>
   <updatecontact>fefcas_at_gmail.com</updatecontact>
   <releases>
+    <release version="3.13" date="2021-06-06"/>
     <release version="3.14" date="2022-12-13"/>
     <release version="3.13" date="2021-06-06"/>
     <release version="3.12" date="2021-04-14"/>
