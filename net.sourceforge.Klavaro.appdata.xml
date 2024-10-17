@@ -28,7 +28,7 @@
   </kudos>
   <url type="homepage">http://klavaro.sourceforge.net/</url>
   <url type="translate">http://klavaro.sourceforge.net/en/translation.html</url>
-  <updatecontact>fefcas_at_gmail.com</updatecontact>
+  <update_contact>fefcas_at_gmail.com</update_contact>
   <releases>
     <release version="3.14" date="2022-12-13"/>
     <release version="3.13" date="2021-06-06"/>
