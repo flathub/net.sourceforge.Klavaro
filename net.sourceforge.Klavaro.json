@@ -1,63 +1,62 @@
 {
     "id": "net.sourceforge.Klavaro",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "24.08",
+    "runtime-version": "26.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "klavaro",
+    "rename-icon": "klavaro",
+    "rename-desktop-file": "klavaro.desktop",
     "finish-args": [
         "--socket=fallback-x11",
         "--share=ipc",
         "--socket=wayland",
         "--socket=pulseaudio"
     ],
-    "rename-icon": "klavaro",
-    "rename-desktop-file": "klavaro.desktop",
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/share/gtk-doc",
+        "/share/man",
+        "*.la",
+        "*.a"
+    ],
     "modules": [
         "shared-modules/intltool/intltool-0.51.json",
         {
             "name": "gtkdatabox3",
-            "cleanup": [
-                "*.a",
-                "*.la",
-                "*.pc",
-                "/include",
-                "/share"
-            ],
             "sources": [
                 {
+                    "type": "archive",
+                    "url": "https://sourceforge.net/projects/gtkdatabox3/files/gtkdatabox-1.0.0.tar.gz",
+                    "sha256": "7add2cd8fb4209f3970dbd33f5238e25b43f6251e7534607bf926c7c6175e14b",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://sourceforge.net/projects/gtkdatabox3/rss",
                         "pattern": "<link>(https://sourceforge.net/.+/gtkdatabox-([\\d\\.]+\\d).tar.\\w+)/download</link>"
-                    },
-                    "type": "archive",
-                    "url": "https://sourceforge.net/projects/gtkdatabox3/files/gtkdatabox-1.0.0.tar.gz",
-                    "sha256": "7add2cd8fb4209f3970dbd33f5238e25b43f6251e7534607bf926c7c6175e14b"
+                    }
                 }
             ]
         },
         {
             "name": "klavaro",
-            "cleanup": [
-                "*.a",
-                "/share/man"
-            ],
             "post-install": [
-                "rm -f /app/share/appdata/klavaro.appdata.xml",
-                "install -Dm644 net.sourceforge.Klavaro.appdata.xml /app/share/appdata/net.sourceforge.Klavaro.appdata.xml",
+                "install -Dm644 net.sourceforge.Klavaro.appdata.xml -t /app/share/metainfo/",
                 "install -Dm644 data/icons/hicolor/48x48.svg /app/share/icons/hicolor/scalable/apps/net.sourceforge.Klavaro.svg"
+            ],
+            "cleanup": [
+                "/share/metainfo/klavaro.appdata.xml"
             ],
             "sources": [
                 {
+                    "type": "archive",
+                    "url": "https://sourceforge.net/projects/klavaro/files/klavaro-3.14.tar.bz2",
+                    "sha256": "87187e49d301c510e6964098cdb612126bf030d2a875fd799eadcad3eae56dab",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://sourceforge.net/projects/klavaro/rss",
                         "pattern": "<link>(https://sourceforge.net/.+/klavaro-([\\d\\.]+\\d).tar.\\w+)/download</link>",
                         "is-main-source": true
-                    },
-                    "type": "archive",
-                    "url": "https://sourceforge.net/projects/klavaro/files/klavaro-3.14.tar.bz2",
-                    "sha256": "87187e49d301c510e6964098cdb612126bf030d2a875fd799eadcad3eae56dab"
+                    }
                 },
                 {
                     "type": "file",
@@ -67,3 +66,4 @@
         }
     ]
 }
+
