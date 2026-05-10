@@ -1,7 +1,7 @@
 {
     "id": "net.sourceforge.Klavaro",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "24.08",
+    "runtime-version": "25.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "klavaro",
     "finish-args": [
@@ -43,8 +43,8 @@
                 "/share/man"
             ],
             "post-install": [
-                "rm -f /app/share/appdata/klavaro.appdata.xml",
-                "install -Dm644 net.sourceforge.Klavaro.appdata.xml /app/share/appdata/net.sourceforge.Klavaro.appdata.xml",
+                "rm -f /app/share/metainfo/klavaro.appdata.xml",
+                "install -Dm644 net.sourceforge.Klavaro.appdata.xml /app/share/metainfo/net.sourceforge.Klavaro.appdata.xml",
                 "install -Dm644 data/icons/hicolor/48x48.svg /app/share/icons/hicolor/scalable/apps/net.sourceforge.Klavaro.svg"
             ],
             "sources": [
